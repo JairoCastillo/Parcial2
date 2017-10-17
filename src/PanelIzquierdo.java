@@ -2,14 +2,17 @@ import java.awt.Color;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.Border;
 
-public class PanelIzquierdo {
+public class PanelIzquierdo extends JPanel implements ActionListener {
 	private String nombre,apellido,direccion,tipo;
 	private int cedula,numero,edad,peso,altura,celular,puesto;
 	
@@ -190,4 +193,7 @@ public class PanelIzquierdo {
         constraint.insets = insets;
         add( Tdireccion, constraint );
 	}
+		public void actionPerformed(ActionEvent e) {
+			
+		}
 }

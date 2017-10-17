@@ -9,8 +9,12 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 
 import javax.swing.JPanel;
+import javax.swing.border.Border;
 import javax.swing.JLabel;
 import java.awt.Image;
+import java.awt.Insets;
+
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 
 public class PanelDerecho extends JPanel{
@@ -18,13 +22,25 @@ public class PanelDerecho extends JPanel{
 	private JLabel JLNombre,JLApellido,JLEdad,JLPuesto;
 	
 	public PanelDerecho() {
-		setLayout( new BorderLayout( ) );
-		JLabel imagen3 = new JLabel();
-		ImageIcon icono3 = new ImageIcon("");
-		imagen3.setIcon(icono3);
-		imagen3.setHorizontalAlignment( JLabel.CENTER );
-		add( imagen3, BorderLayout.CENTER );
-		setBackground( Color.ORANGE);
+		setLayout( new GridBagLayout( ) );
+		Border borde = BorderFactory.createTitledBorder( "Panel Derecho" );
+        setBorder( borde );
+        
+        GridBagConstraints constraint = new GridBagConstraints( );
+        constraint.gridx = 0;
+        constraint.gridy = 0;
+        constraint.fill = GridBagConstraints.BOTH;
+        Insets insets = new Insets(5, 10, 5, 10);
+        constraint.insets = insets;
+       
 	}
+
+
+
+
+
+
+
+
 }
 
