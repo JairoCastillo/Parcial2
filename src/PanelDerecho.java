@@ -47,12 +47,27 @@ public class PanelDerecho extends JPanel implements ActionListener{
         constraint.insets = insets;
         add(JBMostrar, constraint );
         
-        setLayout( new BorderLayout( ) );
-		JLabel imagen1 = new JLabel();
-		ImageIcon icono1 = new ImageIcon("img/oro.PNG");
-		imagen1.setIcon(icono1);
-		imagen1.setHorizontalAlignment( JLabel.CENTER );
-		add( imagen1, BorderLayout.CENTER );
+	        setLayout( new BorderLayout( ) );
+			JLabel imagen1 = new JLabel();
+			ImageIcon icono1 = new ImageIcon("img/oro.PNG");
+			imagen1.setIcon(icono1);
+			imagen1.setHorizontalAlignment( JLabel.CENTER );
+			add( imagen1, BorderLayout.CENTER );
+		
+		    setLayout( new BorderLayout( ) );
+			JLabel imagen2 = new JLabel();
+			ImageIcon icono2 = new ImageIcon("img/plata.PNG");
+			imagen2.setIcon(icono2);
+			imagen2.setHorizontalAlignment( JLabel.CENTER );
+			add( imagen2, BorderLayout.CENTER );
+		
+		    setLayout( new BorderLayout( ) );
+			JLabel imagen3 = new JLabel();
+			ImageIcon icono3 = new ImageIcon("img/bronce.PNG");
+			imagen3.setIcon(icono3);
+			imagen3.setHorizontalAlignment( JLabel.CENTER );
+			add( imagen3, BorderLayout.CENTER );
+		
 	
 	
 	}
