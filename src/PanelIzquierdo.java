@@ -1,6 +1,13 @@
+import java.awt.Color;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
+
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import javax.swing.border.Border;
 
 public class PanelIzquierdo {
 	private String nombre,apellido,direccion,tipo;
@@ -11,6 +18,41 @@ public class PanelIzquierdo {
 	private JTextField Tnombre,Tapellido,Ttipo,Tnumero,Tedad,Tpeso,Taltura,Tcelular,Tdireccion,Tpuesto;
 	
 	public PanelIzquierdo() {
-		
+		setLayout( new GridBagLayout( ) );
+		Border borde = BorderFactory.createTitledBorder( "Panel Izquierdo" );
+        setBorder( borde );
+        GridBagConstraints constraint = new GridBagConstraints( );
+        constraint.gridx = 0;
+        constraint.gridy = 0;
+        constraint.fill = GridBagConstraints.BOTH;
+        Insets insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        
+        Lnombre=new JLabel("Nombre");
+        Lnombre.setForeground(Color.BLUE);
+        constraint.gridx = 0;
+        constraint.gridy = 1;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add(Lnombre, constraint );
+        
+        Tnombre=new JTextField();
+        constraint = new GridBagConstraints( );
+        constraint.gridx = 1;
+        constraint.gridy = 1;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add( Tnombre, constraint );
+        
+        Lapellido=new JLabel("Apellido");
+        Lapellido.setForeground(Color.BLUE);
+        constraint.gridx = 0;
+        constraint.gridy = 2;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add(Lapellido, constraint );
 	}
 }
