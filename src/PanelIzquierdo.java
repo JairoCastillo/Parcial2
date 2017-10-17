@@ -54,5 +54,140 @@ public class PanelIzquierdo {
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
         add(Lapellido, constraint );
+        
+        Tapellido=new JTextField();
+        constraint = new GridBagConstraints( );
+        constraint.gridx = 1;
+        constraint.gridy = 2;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add( Tapellido, constraint );
+        
+        Ltipo=new JLabel("Tipo");
+        Ltipo.setForeground(Color.BLUE);
+        constraint.gridx = 0;
+        constraint.gridy = 3;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add(Ltipo, constraint );
+        
+        Ttipo=new JTextField();
+        constraint = new GridBagConstraints( );
+        constraint.gridx = 1;
+        constraint.gridy = 3;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add( Ttipo, constraint );
+        
+        Lnumero=new JLabel("Numero");
+        Lnumero.setForeground(Color.BLUE);
+        constraint.gridx = 0;
+        constraint.gridy = 4;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add(Lnumero, constraint );
+        
+        Tnumero=new JTextField();
+        constraint = new GridBagConstraints( );
+        constraint.gridx = 1;
+        constraint.gridy = 4;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add( Tnumero, constraint );
+        
+        Ledad=new JLabel("Edad");
+        Ledad.setForeground(Color.BLUE);
+        constraint.gridx = 0;
+        constraint.gridy = 5;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add(Ledad, constraint );
+        
+        Tedad=new JTextField();
+        constraint = new GridBagConstraints( );
+        constraint.gridx = 1;
+        constraint.gridy = 5;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add( Tedad, constraint );
+        
+        Lpeso=new JLabel("Peso");
+        Lpeso.setForeground(Color.BLUE);
+        constraint.gridx = 0;
+        constraint.gridy = 6;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add(Ltipo, constraint );
+        
+        Tpeso=new JTextField();
+        constraint = new GridBagConstraints( );
+        constraint.gridx = 1;
+        constraint.gridy = 6;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add( Tpeso, constraint );
+        
+        Laltura=new JLabel("Altura");
+        Laltura.setForeground(Color.BLUE);
+        constraint.gridx = 0;
+        constraint.gridy = 7;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add(Laltura, constraint );
+        
+        Taltura=new JTextField();
+        constraint = new GridBagConstraints( );
+        constraint.gridx = 1;
+        constraint.gridy = 7;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add( Taltura, constraint );
+        
+        Lcelular=new JLabel("Celular");
+        Lcelular.setForeground(Color.BLUE);
+        constraint.gridx = 0;
+        constraint.gridy = 8;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add(Lcelular, constraint );
+        
+        Tcelular=new JTextField();
+        constraint = new GridBagConstraints( );
+        constraint.gridx = 1;
+        constraint.gridy = 8;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add( Tcelular, constraint );
+        
+        Ldireccion=new JLabel("Direccion");
+        Ldireccion.setForeground(Color.BLUE);
+        constraint.gridx = 0;
+        constraint.gridy = 2;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add(Ldireccion, constraint );
+        
+        Tdireccion=new JTextField();
+        constraint = new GridBagConstraints( );
+        constraint.gridx = 1;
+        constraint.gridy = 2;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add( Tdireccion, constraint );
 	}
 }
