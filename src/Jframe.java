@@ -28,7 +28,7 @@ public Jframe iniciar(){
 public void componente() {
 	
 	panelDerecho = new PanelDerecho();
-	add(panelDerecho, BorderLayout.EAST );
+	add(panelDerecho, BorderLayout.CENTER );
 	 
 	panelIzquierdo= new PanelIzquierdo();
     add(panelIzquierdo, BorderLayout.WEST );

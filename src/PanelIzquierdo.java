@@ -12,7 +12,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.Border;
 
-public class PanelIzquierdo extends JPanel implements ActionListener {
+
+public class PanelIzquierdo extends JPanel implements ActionListener{
 	private String nombre,apellido,direccion,tipo;
 	private int cedula,numero,edad,peso,altura,celular,puesto;
 	
@@ -42,8 +43,8 @@ public class PanelIzquierdo extends JPanel implements ActionListener {
         
         Tnombre=new JTextField();
         constraint = new GridBagConstraints( );
-        constraint.gridx = 1;
-        constraint.gridy = 1;
+        constraint.gridx = 0;
+        constraint.gridy = 2;
         constraint.fill = GridBagConstraints.BOTH;
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
@@ -52,7 +53,7 @@ public class PanelIzquierdo extends JPanel implements ActionListener {
         Lapellido=new JLabel("Apellido");
         Lapellido.setForeground(Color.BLUE);
         constraint.gridx = 0;
-        constraint.gridy = 2;
+        constraint.gridy = 3;
         constraint.fill = GridBagConstraints.BOTH;
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
@@ -60,8 +61,8 @@ public class PanelIzquierdo extends JPanel implements ActionListener {
         
         Tapellido=new JTextField();
         constraint = new GridBagConstraints( );
-        constraint.gridx = 1;
-        constraint.gridy = 2;
+        constraint.gridx = 0;
+        constraint.gridy = 4;
         constraint.fill = GridBagConstraints.BOTH;
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
@@ -70,7 +71,7 @@ public class PanelIzquierdo extends JPanel implements ActionListener {
         Ltipo=new JLabel("Tipo");
         Ltipo.setForeground(Color.BLUE);
         constraint.gridx = 0;
-        constraint.gridy = 3;
+        constraint.gridy = 5;
         constraint.fill = GridBagConstraints.BOTH;
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
@@ -78,8 +79,8 @@ public class PanelIzquierdo extends JPanel implements ActionListener {
         
         Ttipo=new JTextField();
         constraint = new GridBagConstraints( );
-        constraint.gridx = 1;
-        constraint.gridy = 3;
+        constraint.gridx = 0;
+        constraint.gridy = 6;
         constraint.fill = GridBagConstraints.BOTH;
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
@@ -88,7 +89,7 @@ public class PanelIzquierdo extends JPanel implements ActionListener {
         Lnumero=new JLabel("Numero");
         Lnumero.setForeground(Color.BLUE);
         constraint.gridx = 0;
-        constraint.gridy = 4;
+        constraint.gridy = 7;
         constraint.fill = GridBagConstraints.BOTH;
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
@@ -96,8 +97,8 @@ public class PanelIzquierdo extends JPanel implements ActionListener {
         
         Tnumero=new JTextField();
         constraint = new GridBagConstraints( );
-        constraint.gridx = 1;
-        constraint.gridy = 4;
+        constraint.gridx = 0;
+        constraint.gridy = 8;
         constraint.fill = GridBagConstraints.BOTH;
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
@@ -106,7 +107,7 @@ public class PanelIzquierdo extends JPanel implements ActionListener {
         Ledad=new JLabel("Edad");
         Ledad.setForeground(Color.BLUE);
         constraint.gridx = 0;
-        constraint.gridy = 5;
+        constraint.gridy = 9;
         constraint.fill = GridBagConstraints.BOTH;
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
@@ -114,8 +115,8 @@ public class PanelIzquierdo extends JPanel implements ActionListener {
         
         Tedad=new JTextField();
         constraint = new GridBagConstraints( );
-        constraint.gridx = 1;
-        constraint.gridy = 5;
+        constraint.gridx = 0;
+        constraint.gridy = 10;
         constraint.fill = GridBagConstraints.BOTH;
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
@@ -124,7 +125,7 @@ public class PanelIzquierdo extends JPanel implements ActionListener {
         Lpeso=new JLabel("Peso");
         Lpeso.setForeground(Color.BLUE);
         constraint.gridx = 0;
-        constraint.gridy = 6;
+        constraint.gridy =11;
         constraint.fill = GridBagConstraints.BOTH;
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
@@ -132,8 +133,8 @@ public class PanelIzquierdo extends JPanel implements ActionListener {
         
         Tpeso=new JTextField();
         constraint = new GridBagConstraints( );
-        constraint.gridx = 1;
-        constraint.gridy = 6;
+        constraint.gridx = 0;
+        constraint.gridy = 12;
         constraint.fill = GridBagConstraints.BOTH;
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
@@ -142,7 +143,7 @@ public class PanelIzquierdo extends JPanel implements ActionListener {
         Laltura=new JLabel("Altura");
         Laltura.setForeground(Color.BLUE);
         constraint.gridx = 0;
-        constraint.gridy = 7;
+        constraint.gridy = 13;
         constraint.fill = GridBagConstraints.BOTH;
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
@@ -150,8 +151,8 @@ public class PanelIzquierdo extends JPanel implements ActionListener {
         
         Taltura=new JTextField();
         constraint = new GridBagConstraints( );
-        constraint.gridx = 1;
-        constraint.gridy = 7;
+        constraint.gridx = 0;
+        constraint.gridy = 14;
         constraint.fill = GridBagConstraints.BOTH;
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
@@ -160,7 +161,7 @@ public class PanelIzquierdo extends JPanel implements ActionListener {
         Lcelular=new JLabel("Celular");
         Lcelular.setForeground(Color.BLUE);
         constraint.gridx = 0;
-        constraint.gridy = 8;
+        constraint.gridy = 15;
         constraint.fill = GridBagConstraints.BOTH;
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
@@ -168,8 +169,8 @@ public class PanelIzquierdo extends JPanel implements ActionListener {
         
         Tcelular=new JTextField();
         constraint = new GridBagConstraints( );
-        constraint.gridx = 1;
-        constraint.gridy = 8;
+        constraint.gridx = 0;
+        constraint.gridy = 16;
         constraint.fill = GridBagConstraints.BOTH;
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
@@ -178,7 +179,7 @@ public class PanelIzquierdo extends JPanel implements ActionListener {
         Ldireccion=new JLabel("Direccion");
         Ldireccion.setForeground(Color.BLUE);
         constraint.gridx = 0;
-        constraint.gridy = 2;
+        constraint.gridy = 17;
         constraint.fill = GridBagConstraints.BOTH;
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
@@ -186,14 +187,47 @@ public class PanelIzquierdo extends JPanel implements ActionListener {
         
         Tdireccion=new JTextField();
         constraint = new GridBagConstraints( );
-        constraint.gridx = 1;
-        constraint.gridy = 2;
+        constraint.gridx = 0;
+        constraint.gridy = 18;
         constraint.fill = GridBagConstraints.BOTH;
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
         add( Tdireccion, constraint );
+        
+        Lpuesto=new JLabel("Puesto");
+        Lpuesto.setForeground(Color.BLUE);
+        constraint.gridx = 0;
+        constraint.gridy = 19;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add(Lpuesto, constraint );
+        
+        Tpuesto=new JTextField();
+        constraint = new GridBagConstraints( );
+        constraint.gridx = 0;
+        constraint.gridy = 20;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add( Tpuesto, constraint );
+        
+        Bagregar = new JButton("Agregar");
+        Bagregar.addActionListener(this);
+        Bagregar.setActionCommand("Agregar");
+        constraint = new GridBagConstraints( );
+        constraint.gridx = 0;
+        constraint.gridy = 21;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add( Bagregar, constraint );
+        
+        
 	}
-		public void actionPerformed(ActionEvent e) {
+	public void actionPerformed(ActionEvent e) {
+		
+	}
 			
-		}
+		
 }

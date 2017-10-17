@@ -16,10 +16,12 @@ import java.awt.Insets;
 
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 
-public class PanelDerecho extends JPanel{
+public class PanelDerecho extends JPanel implements ActionListener{
 
 	private JLabel JLNombre,JLApellido,JLEdad,JLPuesto;
+	private JButton JBMostrar;
 	
 	public PanelDerecho() {
 		setLayout( new GridBagLayout( ) );
@@ -33,7 +35,26 @@ public class PanelDerecho extends JPanel{
         Insets insets = new Insets(5, 10, 5, 10);
         constraint.insets = insets;
        
+        
+        JBMostrar= new JButton("Mostrar Medallistas");
+        JBMostrar.addActionListener(this);
+        JBMostrar.setActionCommand("Mostrar Medallistas");
+        constraint = new GridBagConstraints( );
+        constraint.gridx = 0;
+        constraint.gridy = 4;
+        constraint.fill = GridBagConstraints.BOTH;
+        insets = new Insets( 5, 10, 5, 10 );
+        constraint.insets = insets;
+        add(JBMostrar, constraint );
+       
 	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
 
 
 
