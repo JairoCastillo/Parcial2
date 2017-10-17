@@ -136,7 +136,7 @@ public class PanelIzquierdo extends JPanel implements ActionListener{
         constraint.fill = GridBagConstraints.BOTH;
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
-        add(Ltipo, constraint );
+        add(Lpeso, constraint );
         
         Tpeso=new JTextField();
         constraint = new GridBagConstraints( );
