@@ -1,36 +1,30 @@
 
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.LinkedHashMap;
 import java.awt.Color;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
-import java.awt.Insets;
-import java.awt.event.ActionEvent;
+import java.awt.BorderLayout;
+import java.awt.Color;
 
-import java.util.ArrayList;
-import java.util.List;
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 
-import javax.swing.*;
-import javax.swing.border.Border;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.TreeMap;
+public class PanelDerecho extends JPanel{
 
-public class PanelDerecho extends JPanel implements ActionListener {
-	
 	private JLabel JLNombre,JLApellido,JLEdad,JLPuesto;
 	
-	
-	
 	public PanelDerecho() {
-		
-	}
-
-
-
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		
+		setLayout( new BorderLayout( ) );
+		JLabel imagen3 = new JLabel();
+		ImageIcon icono3 = new ImageIcon("");
+		imagen3.setIcon(icono3);
+		imagen3.setHorizontalAlignment( JLabel.CENTER );
+		add( imagen3, BorderLayout.CENTER );
+		setBackground( Color.ORANGE);
 	}
 }
+
