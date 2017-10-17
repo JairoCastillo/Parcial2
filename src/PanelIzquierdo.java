@@ -4,13 +4,18 @@ import java.awt.GridBagLayout;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.Border;
+
+import Publicidad0.persona;
 
 
 public class PanelIzquierdo extends JPanel implements ActionListener{
@@ -20,6 +25,9 @@ public class PanelIzquierdo extends JPanel implements ActionListener{
 	private JLabel Lnombre,Lapellido,Ltipo,Lnumero,Ledad,Lpeso,Laltura,Lcelular,Ldireccion,Lpuesto;
 	private JButton Bagregar;
 	private JTextField Tnombre,Tapellido,Ttipo,Tnumero,Tedad,Tpeso,Taltura,Tcelular,Tdireccion,Tpuesto;
+	
+	private usuario Usuario;
+	static List<usuario> listaUsuario=new ArrayList<usuario>();
 	
 	public PanelIzquierdo() {
 		setLayout( new GridBagLayout( ) );
@@ -226,8 +234,40 @@ public class PanelIzquierdo extends JPanel implements ActionListener{
         
 	}
 	public void actionPerformed(ActionEvent e) {
-		
+		if("Agregar".equals(e.getActionCommand())) {
+			if(validarUsuario()) {
+				nombre=Tnombre.getText();
+				apellido=Tapellido.getText();
+				tipo=Ttipo.getText();
+				numero=Integer.parseInt(Tnumero.getText());
+				edad=Integer.parseInt(Tedad.getText());
+				peso=Integer.parseInt(Tpeso.getText());
+				altura=Integer.parseInt(Taltura.getText());
+				celular=Integer.parseInt(Tcelular.getText());
+				direccion=Tdireccion.getText();
+				puesto=Integer.parseInt(Tpuesto.getText());
+				
+				Usuario=new usuario(nombre,apellido,tipo,numero,edad,peso,altura,celular,direccion,puesto);
+				listaUsuario.add(Usuario);
+				JOptionPane.showMessageDialog(this,"Registro completo.","Mensaje",JOptionPane.INFORMATION_MESSAGE);
+				
+				Tnombre.setText("");
+				Tapellido.setText("");
+				Ttipo.setText("");
+				Tnumero.setText("");
+				Tedad.setText("");
+				Tpeso.setText("");
+				Taltura.setText("");
+				Tcelular.setText("");
+				Tdireccion.setText("");
+				Tpuesto.setText("");
+				
+			}
+		}
 	}
-			
-		
+	public boolean validarUsuario() {
+	if(Tnombre.getText().equals("")||Tapellido.getText().equals("")||Ttipo.getText().equals("")||Tnumero.getText().equals("")||Tedad.getText().equals("")||Tpeso.getText().equals("")||Taltura.getText().equals("")||Tcelular.getText().equals("")||Tdireccion.getText().equals("")||Tpuesto.getText().equals("")) {
+		return false;
+	}
+	}
 }
