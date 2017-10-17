@@ -15,7 +15,6 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.Border;
 
-import Publicidad0.persona;
 
 
 public class PanelIzquierdo extends JPanel implements ActionListener{
@@ -268,6 +267,8 @@ public class PanelIzquierdo extends JPanel implements ActionListener{
 	public boolean validarUsuario() {
 	if(Tnombre.getText().equals("")||Tapellido.getText().equals("")||Ttipo.getText().equals("")||Tnumero.getText().equals("")||Tedad.getText().equals("")||Tpeso.getText().equals("")||Taltura.getText().equals("")||Tcelular.getText().equals("")||Tdireccion.getText().equals("")||Tpuesto.getText().equals("")) {
 		return false;
+	}else {
+		return true;
 	}
 	}
 }

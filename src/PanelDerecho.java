@@ -41,17 +41,24 @@ public class PanelDerecho extends JPanel implements ActionListener{
         JBMostrar.setActionCommand("Mostrar Medallistas");
         constraint = new GridBagConstraints( );
         constraint.gridx = 0;
-        constraint.gridy = 4;
+        constraint.gridy = 1;
         constraint.fill = GridBagConstraints.BOTH;
         insets = new Insets( 5, 10, 5, 10 );
         constraint.insets = insets;
         add(JBMostrar, constraint );
-       
+        
+        setLayout( new BorderLayout( ) );
+		JLabel imagen1 = new JLabel();
+		ImageIcon icono1 = new ImageIcon("img/oro.PNG");
+		imagen1.setIcon(icono1);
+		imagen1.setHorizontalAlignment( JLabel.CENTER );
+		add( imagen1, BorderLayout.CENTER );
+	
+	
 	}
 
-	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
@@ -64,4 +71,5 @@ public class PanelDerecho extends JPanel implements ActionListener{
 
 
 }
+
 
